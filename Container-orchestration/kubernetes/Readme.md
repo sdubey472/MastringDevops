@@ -66,7 +66,6 @@ Schdular basically are responsable to which node is perfect to deploy and run PO
  <img src="../../img/components.jpg" width="100%" alt=""/>
 
 
-
 ### Cluster Steup
 By using kubernities you can setup Cluster on the follwoing place
 - On Primises
