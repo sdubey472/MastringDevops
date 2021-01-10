@@ -31,11 +31,19 @@ A pod or a group of replicated pods are abstracted through Kubernetes objects ca
 
 To learn about the various Kubernetes resources that you can configure, see the <a href="https://kubernetes.io/docs/concepts/" target="_blank"> official Kubernetes documentation.</a>
 
-
-
 ----
 
 
+### Kubernities Components:
+
+- Api Server
+- Scheduler
+- Controller
+- ECTD Database
+- Kube Proxy
+- Kubelet
+- Container Docker
+- POD
 
 ## References:
 
