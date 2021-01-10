@@ -37,29 +37,31 @@ To learn about the various Kubernetes resources that you can configure, see the 
 ### Kubernities Components:
 
 #### Api Server:-
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br><br>
+APi Server is working like as middleware, In kubernities every component is communicate through api server they are communication personally <br><br>
 
 #### Scheduler
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br>
 
 #### Controller:- 
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
-<br>
-ECTD Database:- Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator <br>
-####  Kube Proxy:- 
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
+Controller basically are responsable to maintain the POD up and live, in case pod are deleted then controller responsbility to create again them. <br>
+
+#### ECTD Database:- 
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator <br>
+
+#### Kube Proxy:- 
+Kube Proxy is to make networking for the POD, means kubeproxy give an IP to Every POD at the time POD creation. 
 <br>
 
 ####  Kubelet:- 
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator
+The kubelet is responsible for maintaining a set of pods, which are composed of one or more containers, on a local system. Within a Kubernetes cluster, the kubelet functions as a local agent that watches for pod specs via the Kubernetes API server.
 <br>
 
 ####  Container Docker:-
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator  
+Container is responsable download the image inside the POD from the docker registery and other source.  
 <br>
 
 ####   POD:-
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
+A Kubernetes pod is a collection of one or more Linux® containers, and is the smallest unit of a Kubernetes application. Any given pod can be composed of multiple, tightly coupled containers (an advanced use case) or just a single container (a more common use case). Containers are grouped into Kubernetes pods in order to increase the intelligence of resource sharing, as described below.
 <br>
 
 ### Figure 
