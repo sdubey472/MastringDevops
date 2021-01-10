@@ -36,14 +36,31 @@ To learn about the various Kubernetes resources that you can configure, see the 
 
 ### Kubernities Components:
 
-- Api Server
-- Scheduler
-- Controller
-- ECTD Database
-- Kube Proxy
-- Kubelet
-- Container Docker
-- POD
+#### Api Server:-
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br><br>
+
+#### Scheduler
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br><br>
+
+#### Controller:- 
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
+<br><br>
+ECTD Database:- Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator <br><br>
+####  Kube Proxy:- 
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
+<br><br>
+
+####  Kubelet:- 
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator
+<br><br>
+
+####  Container Docker:-
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator  
+<br><br>
+
+####   POD:-
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
+<br><br>
 
 
 ### Cluster Steup
@@ -59,7 +76,7 @@ By using kubernities you can setup Cluster on the follwoing place
 - Using file methods
 - Using Kubeadm
 - Using Minikube (Only for learning purpose, its make single node cluster not recommended for production)
-- Using Kops (Basically it's kubernities tools that is supporterd by AWS, Google, Terraform, VMware)
+- Using Kops (Basically it's kubernities tools that is also supporterd by AWS, Google, Terraform, VMware)
 
 ### Cloud Services that support kubernities
 
@@ -67,6 +84,8 @@ By using kubernities you can setup Cluster on the follwoing place
 - Azure (AKS)
 - AWS (EKS)
 - Readhat (Open shift)
+
+
 
 
 ## References:
