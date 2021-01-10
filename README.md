@@ -22,7 +22,7 @@
 *******************
 
 
-### 0.1. In DevOps You should be knowldege of following tools and stechnologies
+### 0.1. In DevOps You should be knowldege of following tools and technologies
 
 <table>
  <tr>
