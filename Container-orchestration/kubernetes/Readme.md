@@ -40,27 +40,31 @@ To learn about the various Kubernetes resources that you can configure, see the 
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br><br>
 
 #### Scheduler
-Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br><br>
+Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator<br>
 
 #### Controller:- 
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
-<br><br>
-ECTD Database:- Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator <br><br>
+<br>
+ECTD Database:- Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator <br>
 ####  Kube Proxy:- 
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
-<br><br>
+<br>
 
 ####  Kubelet:- 
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator
-<br><br>
+<br>
 
 ####  Container Docker:-
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator  
-<br><br>
+<br>
 
 ####   POD:-
 Schdular basically are responsable to which node is perfect to deploy and run POD. Schedular will run when it's got the instruction from the api server given  by kubernities adminstator 
-<br><br>
+<br>
+
+### Figure 
+ <img src="../../img/components.jpg" width="100%" alt=""/>
+
 
 
 ### Cluster Steup
