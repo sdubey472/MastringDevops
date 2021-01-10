@@ -21,7 +21,7 @@
 *******************
 
 
-### 0.1. In DevOps You should have knowldege of following tools and technologies
+### In DevOps You should have knowldege of following tools and technologies
 
 <table>
  <tr>

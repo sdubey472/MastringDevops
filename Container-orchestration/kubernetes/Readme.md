@@ -64,8 +64,11 @@ Container is responsable download the image inside the POD from the docker regis
 A Kubernetes pod is a collection of one or more Linux® containers, and is the smallest unit of a Kubernetes application. Any given pod can be composed of multiple, tightly coupled containers (an advanced use case) or just a single container (a more common use case). Containers are grouped into Kubernetes pods in order to increase the intelligence of resource sharing, as described below.
 <br>
 
-### Figure 
+### 
+<br>
+<br>
  <img src="../../img/components.jpg" width="100%" alt=""/>
+ <center>Component Communication workflow</center> 
 
 
 ### Cluster Steup
@@ -90,8 +93,39 @@ By using kubernities you can setup Cluster on the follwoing place
 - AWS (EKS)
 - Readhat (Open shift)
 
+<br>
+
+### Kubernities replication
+There are three type of kubernities replication
+-   Relication Controller
+-   Replica Set
+-   Deployment
+
+<b>Relication Controller</b> can create number of pods and manage the 24/7 them if any thing happen wrong inside the pod or pod is deleted in that case pod automatically create by using replication controller. 
+It has the feature of autoscaling. This replication controller will handle only single label type pf pods. It's not capabale to handle different type of label pods.
+In replication contoller has Rolling update feature.
+It has a downtime at the time of roling update because it will shift all the pods from the one replication to another replication, see in the picture.
+
+At the time create the POD we've to set label for that POD and in replication controller we have to ask that you will handle only those pods which label is team=dev and it will not consider other label pods.
+
+<b>Replica set</b> is almost same as replication contoller but they have power to handle diffreent type label pods. It's also work like autoscaling and in replica set don't have Rolling update feature
+For Example Replica set can handle the team=dev and team=prod.
+
+<b>Deployment</b> is the most powerfull controller because they have feature roling update and rolout both feature along with they have the multiple lable type pod handler feature.
+It has less downtime because it will create new replica set at the pallerel of exist replica set and it copy the pods from one replica to another not move.
+if you need to rolout the you can easily rolout because it's not remove previous replica set.
+See in the picture given below.
+ 
 
 
+
+
+
+<br>
+ <img src="../../img/replicationController.png" width="100%" alt=""/>
+ <center>Kubernities Replica Controller Workflow</center> 
+
+----
 
 ## References:
 
