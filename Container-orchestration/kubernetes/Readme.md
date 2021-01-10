@@ -1,47 +1,50 @@
-## Kubernetes Deployment Tutorial
-*************
-
-### Kubernetes Deplyoment Tutorials:
-
-- [The First Introduction to Kubernetes](https://medium.com/faun/the-first-introduction-to-kubernetes-62d26f99caff)
-- [A Gentle Introduction to Kubernetes](https://medium.com/faun/a-gentle-introduction-to-kubernetes-4961e443ba26) 
-  - learn how to deploy Kubernetes services and Ambassador API gateway
-  - [Github Workshop Repo](https://github.com/eon01/kubernetes-workshop?ref=hackr.io)
+## Introduction
+----
 
 
-- [Learning Path Kubernetes](https://developer.ibm.com/series/kubernetes-learning-path/)
-  - If you're new to Kubernetes and container orchestration and want to begin learning about it, this learning path covers everything from basic prerequisites to more advanced skills needed for containerization.
+Kubernetes, also known as K8s, is an open source system for managing [containerized applications]
+across multiple hosts. It provides basic mechanisms for deployment, maintenance,
+and scaling of applications.
 
-- [The Best Kubernetes Tutorials](https://www.magalix.com/blog/the-best-kubernetes-tutorials)
-  - We have been looking for the best Kubernetes tutorials out there and thought of sharing some of what we found interesting to get started with Kubernetes.
+Kubernetes builds upon a decade and a half of experience at Google running
+production workloads at scale using a system called [Borg],
+combined with best-of-breed ideas and practices from the community.
 
-- ### The Official Kubernetes.io Tutorials
-      
-    - [The Basics](https://kubernetes.io/docs/tutorials/#basics)
-    - [Configuring Kubernetes](https://kubernetes.io/docs/tutorials/#configuration)
-    - [Stateless Applications](https://kubernetes.io/docs/tutorials/#stateless-applications)
-    - [Stateful Applications](https://kubernetes.io/docs/tutorials/#stateful-applications)
-    - [CI/CD Pipeline](https://kubernetes.io/docs/tutorials/#ci-cd-pipeline)
-    - [Managing Kubernetes Clusters](https://kubernetes.io/docs/tutorials/#clusters)
-    - [Services](https://kubernetes.io/docs/tutorials/#services)
+Kubernetes is hosted by the Cloud Native Computing Foundation ([CNCF]).
+If your company wants to help shape the evolution of
+technologies that are container-packaged, dynamically scheduled,
+and microservices-oriented, consider joining the CNCF.
+For details about who's involved and how Kubernetes plays a role,
+read the CNCF [announcement].
+<br><br>
 
-- ### DigitalOcean Tutorials
 
-    - It is a collection of articles that are nicely written and well organized. They are sometimes focused on Running Kubernetes on top of DigitalOcean however. But you are still going to learn a lot of Kubernetes basics that are applicable to any other infrastructure. Some of the notable topics are:
+### Architecture
+----
+Deploying an application to Kubernetes means deploying an application to a Kubernetes cluster.
 
-        - [An Introduction to Kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
-        - [An introduction to Kubernetes DNS Services](https://www.digitalocean.com/community/tutorials/an-introduction-to-the-kubernetes-dns-service)
-        - [An introduction to Helm, the package manager for Kubernetes](https://www.digitalocean.com/community/tutorials/an-introduction-to-helm-the-package-manager-for-kubernetes)
-        - [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes)
-        - [Building Optimized Containers for Kubernetes](https://www.digitalocean.com/community/tutorials/building-optimized-containers-for-kubernetes)
-        - [Kubernetes Networking Under the Hood](https://www.digitalocean.com/community/tutorials/kubernetes-networking-under-the-hood)
-        - [Architecting Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/architecting-applications-for-kubernetes)
-        - [Building Blocks for Doing CI/CD with Kubernetes](https://www.digitalocean.com/community/tutorials/webinar-series-building-blocks-for-doing-ci-cd-with-kubernetes)
-        - [How to Back up and restore a Kubernetes Cluster on DigitalOcean using Heptio Ark](https://www.digitalocean.com/community/tutorials/how-to-back-up-and-restore-a-kubernetes-cluster-on-digitalocean-using-heptio-ark)
-        - [How to Setup a Nginix Ingress with Cert-Manager on DigitalOcean Kubernetes](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-with-cert-manager-on-digitalocean-kubernetes)
-        - [How to Inspect Kubernetes Networking](https://www.digitalocean.com/community/tutorials/how-to-inspect-kubernetes-networking)
+A typical Kubernetes cluster is a collection of physical or virtual machines called nodes that run containerized applications. A cluster is made up of one master node that manages the cluster, and many worker nodes that run the actual application instances inside Kubernetes objects called pods.
 
-### References:
+A pod is a basic building block in a Kubernetes cluster. It represents a single running process that encapsulates a container or in some scenarios many closely coupled containers. Pods can be replicated to scale applications and handle more traffic. From the perspective of a cluster, a set of replicated pods is still one application instance, although it might be made up of dozens of instances of itself. A single pod or a group of replicated pods are managed by Kubernetes objects called controllers. A controller handles replication, self-healing, rollout of updates, and general management of pods. One example of a controller that you will use in this guide is a deployment.
+
+A pod or a group of replicated pods are abstracted through Kubernetes objects called services that define a set of rules by which the pods can be accessed. In a basic scenario, a Kubernetes service exposes a node port that can be used together with the cluster IP address to access the pods encapsulated by the service.
+
+To learn about the various Kubernetes resources that you can configure, see the <a href="https://kubernetes.io/docs/concepts/" target="_blank"> official Kubernetes documentation.</a>
+
+
+
+----
+
+
+
+## References:
+
+
+
+
+
+
+
 
 [Megalix Blog](https://www.magalix.com/blog/the-best-kubernetes-tutorials)
 
