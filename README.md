@@ -2,8 +2,6 @@
 
 ![devops guide](./devops-guide.png)
  
-![GitHub last commit](https://img.shields.io/github/last-commit/Tikam02/DevOps_Cheatsheet?style=for-the-badge)   ![Devops](https://img.shields.io/badge/Development-Operations-blue?style=for-the-badge) ![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/devops?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/Tikam02/DevOps-Guide?style=for-the-badge)
-
 <!-- <p>
 		<a href="https://triplebyte.com/a/UEmYALe/d">
 		<b>Looking for a job?</b> 
@@ -17,7 +15,7 @@
 		</a>
 	</p>
 	
-  
+
 	 -->
 	
 *******************
