@@ -45,6 +45,30 @@ To learn about the various Kubernetes resources that you can configure, see the 
 - Container Docker
 - POD
 
+
+### Cluster Steup
+By using kubernities you can setup Cluster on the follwoing place
+- On Primises
+- Cloud- AWS/GCP/Azure
+- VM
+- Platform as Service
+----
+
+### You can create cluster following methods
+- Using Kubeadm
+- Using file methods
+- Using Kubeadm
+- Using Minikube (Only for learning purpose, its make single node cluster not recommended for production)
+- Using Kops (Basically it's kubernities tools that is supporterd by AWS, Google, Terraform, VMware)
+
+### Cloud Services that support kubernities
+
+- Google (GKE)
+- Azure (AKS)
+- AWS (EKS)
+- Readhat (Open shift)
+
+
 ## References:
 
 
