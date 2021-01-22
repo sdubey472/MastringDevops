@@ -1,8 +1,3 @@
-
-## Kubernetes QA
-<a href="./qa.md"><br/><b>Kubernetes QA</b></a>
-
-- [Kubernetes QA](#kubernetes-qa)
 - [## Introduction](#-introduction)
 - [### Architecture](#-architecture)
   - [Kubernities Components:](#kubernities-components)
@@ -150,7 +145,6 @@ See in the picture given below.
  <center>Kubernities Replica Controller Workflow</center> 
 
 ----
-
 ## References:
 
 
