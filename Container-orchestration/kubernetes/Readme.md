@@ -1,6 +1,30 @@
+
+## Kubernetes QA
+<a href="./qa.md"><br/><b>Kubernetes QA</b></a>
+
+- [Kubernetes QA](#kubernetes-qa)
+- [## Introduction](#-introduction)
+- [### Architecture](#-architecture)
+  - [Kubernities Components:](#kubernities-components)
+    - [Api Server:-](#api-server-)
+    - [Scheduler](#scheduler)
+    - [Controller:-](#controller-)
+    - [ECTD Database:-](#ectd-database-)
+    - [Kube Proxy:-](#kube-proxy-)
+    - [Kubelet:-](#kubelet-)
+    - [Container Docker:-](#container-docker-)
+    - [POD:-](#pod-)
+  - [](#)
+  - [Cluster Steup](#cluster-steup)
+- [- Platform as Service](#--platform-as-service)
+  - [You can create cluster following methods](#you-can-create-cluster-following-methods)
+  - [Cloud Services that support kubernities](#cloud-services-that-support-kubernities)
+  - [Kubernities replication](#kubernities-replication)
+- [References:](#references)
+
+
 ## Introduction
 ----
-
 
 Kubernetes, also known as K8s, is an open source system for managing [containerized applications]
 across multiple hosts. It provides basic mechanisms for deployment, maintenance,
