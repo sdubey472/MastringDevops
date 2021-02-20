@@ -3,22 +3,22 @@ pipeline {
 agent any 
     stages { 
         stage ('Build') { 
-          echo "Build"
+          echo 'Build'
         }
         stage ('Test') { 
-          echo "Test"
+          echo 'Test'
         
         }
         stage ('QA') { 
-          echo "QA"
+          echo 'QA'
         
         }
         stage ('Deploy') { 
-          echo "QA"
+          echo 'QA'
         
         }
         stage ('Monitor') { 
-          print "QA"
+          print 'QA'
  
         }
  
