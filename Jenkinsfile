@@ -1,7 +1,6 @@
 pipeline {
     agent any
     environment {
-        
         dockerRun = "docker run -p 8000:80 -d --name devOpsGuide  sdubey/devopsguide:latest"
         dockerrm = "docker container rm -f devOpsGuide"
         dockerimagerm = "docker image rmi  sdubey/devopsguide"
