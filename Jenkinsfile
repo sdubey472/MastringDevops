@@ -29,6 +29,8 @@ pipeline {
         
         stage("Push") {
             steps {
+                echo $JOB_NAME
+
                 //withCredentials([string(credentialsId: 'sdubey123!', variable: 'sdubey123!')]) {
                     // some block
                     //sh 'docker login -u sd171991 -p ${mobilehubpassword}'
@@ -41,11 +43,12 @@ pipeline {
         
         stage("Deployment") {
             steps {
-//                sshagent(['hostpassword']) {
-                    // some block           
-  //                  sh "ssh -o StricHostKeyChecking=no ec2-user@172.31.42.54  ${env.dockerRun}"
+                echo $JOB_NAME
+                // sshagent(['hostpassword']) {
+                // some block           
+                // sh "ssh -o StricHostKeyChecking=no ec2-user@172.31.42.54  ${env.dockerRun}"
 
-    //            }
+                // }
         }
         }
     }
