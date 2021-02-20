@@ -29,25 +29,23 @@ pipeline {
         
         stage("Push") {
             steps {
-                withCredentials([string(credentialsId: 'sdubey123!', variable: 'sdubey123!')]) {
-    // some block
-    sh 'docker login -u sd171991 -p ${mobilehubpassword}'
-    sh 'docker image push sdubey/$JOB_NAME:v1.$BUILD_ID'
-    sh 'docker image push sdubey/$JOB_NAME:latest'
-    sh 'docker image rmi $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
-}
+                //withCredentials([string(credentialsId: 'sdubey123!', variable: 'sdubey123!')]) {
+                    // some block
+                    //sh 'docker login -u sd171991 -p ${mobilehubpassword}'
+                    //sh 'docker image push sdubey/$JOB_NAME:v1.$BUILD_ID'
+                    //sh 'docker image push sdubey/$JOB_NAME:latest'
+                    //sh 'docker image rmi $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
+                //}
             }
         }
         
         stage("Deployment") {
             steps {
-             sshagent(['hostpassword']) {
-    // some block           
-   
-                 
-                 sh "ssh -o StricHostKeyChecking=no ec2-user@172.31.42.54  ${env.dockerRun}"
-    
-}
+//                sshagent(['hostpassword']) {
+                    // some block           
+  //                  sh "ssh -o StricHostKeyChecking=no ec2-user@172.31.42.54  ${env.dockerRun}"
+
+    //            }
         }
         }
     }
