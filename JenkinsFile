@@ -2,18 +2,18 @@ pipeline {
 agent any 
     stages { 
         stage ('Build') { 
-          print "Build"
+          echo "Build"
         }
         stage ('Test') { 
-          print "Test"
+          echo "Test"
         
         }
         stage ('QA') { 
-          print "QA"
+          echo "QA"
         
         }
         stage ('Deploy') { 
-          print "QA"
+          echo "QA"
         
         }
         stage ('Monitor') { 
