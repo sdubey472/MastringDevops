@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
     agent any
     environment {
         dockerRun = "docker run -p 8000:80 -d --name devOpsGuide  sdubey/devopsguide:latest"
