@@ -10,12 +10,16 @@ pipeline {
     stages {
         stage('PUll') {
             steps {
-                git 'https://github.com/sdubey472/MastringDevops.git'
+                git([url: 'https://github.com/sdubey472/MastringDevops.git', branch: 'main'])
             }
         }
         
         stage("Build") {
             steps {
+                echo $JOB_NAME
+                echo $BUILD_ID
+                
+                
                 sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
