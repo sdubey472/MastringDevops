@@ -34,9 +34,9 @@ pipeline {
 
 //                echo $JOB_NAME
 
-                withCredentials([string(credentialsId: 'sdubey123!', variable: 'sdubey123!')]) {
+                withCredentials([string(credentialsId: 'dockerhubpassword', variable: 'dockerhubpassword')]) {
                     // some block
-                    sh 'docker login -u sd171991 -p ${mobilehubpassword}'
+                    sh 'docker login -u sd171991 -p ${dockerhubpassword}'
                     sh 'docker image push sdubey/$JOB_NAME:v1.$BUILD_ID'
                     sh 'docker image push sdubey/$JOB_NAME:latest'
                     sh 'docker image rmi $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
