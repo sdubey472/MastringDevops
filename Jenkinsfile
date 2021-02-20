@@ -16,8 +16,8 @@ pipeline {
         
         stage("Build") {
             steps {
-                echo $JOB_NAME
-                echo $BUILD_ID
+                echo "Hello Jenkins"
+                //echo $BUILD_ID
                 
                 
                 //sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
@@ -29,7 +29,9 @@ pipeline {
         
         stage("Push") {
             steps {
-                echo $JOB_NAME
+                    echo "Hello Jenkins"
+
+//                echo $JOB_NAME
 
                 //withCredentials([string(credentialsId: 'sdubey123!', variable: 'sdubey123!')]) {
                     // some block
@@ -43,6 +45,8 @@ pipeline {
         
         stage("Deployment") {
             steps {
+                                    echo "Hello Jenkins"
+
                 echo $JOB_NAME
                 // sshagent(['hostpassword']) {
                 // some block           
