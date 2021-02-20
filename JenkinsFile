@@ -1,0 +1,25 @@
+pipeline { 
+agent any 
+    stages { 
+        stage ('Build') { 
+          print "Build"
+        }
+        stage ('Test') { 
+          print "Test"
+        
+        }
+        stage ('QA') { 
+          print "QA"
+        
+        }
+        stage ('Deploy') { 
+          print "QA"
+        
+        }
+        stage ('Monitor') { 
+          print "QA"
+ 
+        }
+ 
+    }           
+ }
