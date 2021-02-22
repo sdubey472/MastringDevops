@@ -1,16 +1,16 @@
 pipeline {
     agent any
     environment {
-        dockerRun = "docker run -p 8000:80 -d --name devOpsGuide  sdubey/devopsguide:latest"
-        dockerrm = "docker container rm -f devOpsGuide"
-        dockerimagerm = "docker image rmi  sdubey/devopsguide"
+        dockerRun = "docker run -p 8000:80 -d --name devOpsGuide  sdubey/$JOB_NAME:latest"
+        dockerrm = "docker container rm -f $JOB_NAME"
+        dockerimagerm = "docker image rmi  sdubey/$JOB_NAME"
     }
         
 
     stages {
         stage('PUll') {
             steps {
-                git([url: 'https://github.com/sdubey472/MastringDevops.git', branch: 'main'])
+                git([url: 'https://github.com/sdubey472/devOpsGuide.git', branch: 'main'])
             }
         }
         
@@ -19,7 +19,7 @@ pipeline {
                 echo "Hello Jenkins"
                 //echo $BUILD_ID
                 
-                
+                sh 'docker rmi -f $(docker images -a -q)'
                 sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
