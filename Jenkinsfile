@@ -17,8 +17,7 @@ pipeline {
             steps {
                 echo "Hello Jenkins"
                 //echo $BUILD_ID
-                
-                sh 'docker rmi -f $(docker images -a -q)'
+                //sh 'docker rmi -f $(docker images -a -q)'
                 sh 'docker image build -t $JOB_NAME:v1.$BUILD_ID .'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:v1.$BUILD_ID'
                 sh 'docker image tag $JOB_NAME:v1.$BUILD_ID sdubey/$JOB_NAME:latest'
