@@ -44,7 +44,9 @@ pipeline {
         
         stage("Deployment") {
             steps {
-                                    echo "Hello Jenkins"
+                echo "Hello Jenkins"
+                sh 'kubectl apply -f /opt/deployment.yml'
+                sh 'kubectl apply -f /opt/service.yml'
 
                 //echo $JOB_NAME
                 // sshagent(['hostpassword']) {
