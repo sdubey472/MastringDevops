@@ -6,6 +6,7 @@ pipeline {
         dockerimagerm = "docker image rmi  sdubey/$JOB_NAME"
     }
     
+    
         
     stages {
         stage('PUll') {
