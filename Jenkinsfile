@@ -5,6 +5,7 @@ pipeline {
         dockerrm = "docker container rm -f $JOB_NAME"
         dockerimagerm = "docker image rmi  sdubey/$JOB_NAME"
     }
+    
         
     stages {
         stage('PUll') {
