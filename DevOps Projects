@@ -1,0 +1,3 @@
+DevOps Projects
+
+kops create cluster --cloud=aws --zones=us-east-1 --name=clusters.dev.sdubey.in --dns-zone=sdubey.in --dns private

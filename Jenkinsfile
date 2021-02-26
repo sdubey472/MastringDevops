@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('PUll') {
             steps {
-                git([url: 'https://github.com/sdubey472/MastringDevops.git', branch: 'main'])
+                git([url: 'https://github.com/sdubey472/devOpsGuide.git', branch: 'main'])
             }
         }
         
